@@ -33,8 +33,12 @@ class AsyncArgon2:
         }
         default_params.update(kwargs)
 
+        prefixed_params = {
+            f"argon2__{key}": value for key, value in default_params.items()
+        }
+
         self._context = CryptContext(
-            schemes=["argon2"], _autoload=True, **default_params
+            schemes=["argon2"], _autoload=True, **prefixed_params
         )
         self.logger = logger or getLogger(__name__)
 
