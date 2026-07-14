@@ -7,11 +7,11 @@ from passlib.context import CryptContext
 class AsyncArgon2:
     def __init__(self, logger: Logger | None = None, **kwargs) -> None:
         default_params = {
-            "time_cost": 2,
-            "memory_cost": 102400,
-            "parallelism": 8,
-            "hash_len": 32,
-            "salt_len": 16,
+            "argon2__time_cost": 2,
+            "argon2__memory_cost": 102400,
+            "argon2__parallelism": 8,
+            "argon2__hash_len": 32,
+            "argon2__salt_len": 16,
         }
         default_params.update(kwargs)
 
