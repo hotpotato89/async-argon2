@@ -1,0 +1,55 @@
+site_name: AsyncArgon2
+site_url: https://hotpotato89.github.io/async-argon2
+repo_url: https://github.com/hotpotato89/async-argon2
+repo_name: hotpotato89/async-argon2
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: deep-purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: deep-purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+
+nav:
+  - Главная: index.md
+  - Установка: installation.md
+  - Использование:
+      - Быстрый старт: usage/quickstart.md
+      - Кастомные параметры: usage/custom_params.md
+  - API Reference: api.md
+  - Changelog: changelog.md
