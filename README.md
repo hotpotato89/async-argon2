@@ -1,5 +1,10 @@
 # AsyncArgon2
 
+[![PyPI version](https://img.shields.io/pypi/v/async-argon2.svg)](https://pypi.org/project/async-argon2/)
+[![License](https://img.shields.io/github/license/hotpotato89/async-argon2.svg)](https://github.com/hotpotato89/async-argon2/blob/main/LICENSE)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://github.com/hotpotato89/async-argon2/actions)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/hotpotato89/async-argon2)
+
 Асинхронная обертка для хэширования паролей с Argon2.
 
 [**Документация**](https://hotpotato89.github.io/async-argon2/)
