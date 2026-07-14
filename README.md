@@ -3,6 +3,11 @@
 Просто собственная библиотека чтобы запускать хэширование в отдельных потоках и не блокировать `event loop`
 
 ### Использование
+
+```bash
+pip install async_argon2
+```
+
 ```python
 import asyncio
 
@@ -14,7 +19,8 @@ async def main() -> None:
     password_hash = await hash_manager.hash("secret-password")
     print(password_hash) # Хэш пароля
 
-    assert await hash_manager.verify("secret_password", password_hash)
+    assert await hash_manager.verify("secret-password", password_hash)
+    assert not await hash_manager.verify("wrong-password", password_hash)
 
 if __name__ == "__main__":
     asyncio.run(main())
