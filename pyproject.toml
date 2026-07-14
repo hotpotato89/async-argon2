@@ -38,3 +38,6 @@ only-include = [
 [tool.pytest.ini_options]
 asyncio_mode="auto"
 testpaths=["tests"]
+filterwarnings = [
+    "ignore::DeprecationWarning:passlib.handlers.argon2",
+]
